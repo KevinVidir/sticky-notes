@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .note {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: rgb(190,140,162);
+    background: radial-gradient(circle, rgba(190,140,162,0.5102415966386555) 0%, rgba(148,187,233,0.3897934173669467) 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    position: relative;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .note div[contenteditable="true"] {
+    height: calc(100% - 30px);
+    overflow-y: auto;
+  }
